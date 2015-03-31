@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HCa-AN-c5H">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Topology-->
+        <scene sceneID="aK3-S6-d2L">
+            <objects>
+                <viewController id="PUP-Ar-vet" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k92-c7-XqR"/>
+                        <viewControllerLayoutGuide type="bottom" id="p9K-Ml-nnk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="puu-KP-xnX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Topology" image="topology.png" id="oXF-Xs-uD7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIL-Ow-Dw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1016" y="-1903"/>
+        </scene>
+        <!--Resource Management-->
+        <scene sceneID="Sgk-0Y-5sY">
+            <objects>
+                <viewController id="lf6-ms-Hft" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4LG-xh-M5d"/>
+                        <viewControllerLayoutGuide type="bottom" id="QCb-V1-hyS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0xR-ey-4AV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Resource Management" image="RM.png" id="s0K-gy-Qbi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hs-6f-vNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="-1895"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="Suc-eE-Rh9">
+            <objects>
+                <viewController id="ShN-z3-IzT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MFG-U3-8gs"/>
+                        <viewControllerLayoutGuide type="bottom" id="dIC-qC-kEm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tgg-lz-b6N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Statistics" image="Statistics.png" id="YUy-3w-wkH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNM-o5-PdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-1895"/>
+        </scene>
+        <!--Canvas Main Menu Controller-->
+        <scene sceneID="qiI-n5-RIm">
+            <objects>
+                <tableViewController id="eUR-IH-0wz" customClass="CanvasMainMenuController" customModule="TopologyManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RI8-Uy-gJP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uCE-An-8Q0">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uCE-An-8Q0" id="cSy-LO-DPa">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eUR-IH-0wz" id="VoV-xc-95V"/>
+                            <outlet property="delegate" destination="eUR-IH-0wz" id="8Ts-1l-jIl"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="mainMenuTableView" destination="RI8-Uy-gJP" id="dbY-df-o0d"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ym1-gP-FJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="-3803"/>
+        </scene>
+        <!--Canvas View Controller-->
+        <scene sceneID="ilD-rY-8h7">
+            <objects>
+                <viewController storyboardIdentifier="MainCanvasID" id="nnB-X3-Mrs" customClass="CanvasViewController" customModule="TopologyManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SAx-bc-tDP"/>
+                        <viewControllerLayoutGuide type="bottom" id="dSC-Z0-DC3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8te-ba-KmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9Z7-4V-pNu">
+                        <barButtonItem key="leftBarButtonItem" image="narraLogo.png" id="Uzc-Rb-ivs">
+                            <connections>
+                                <action selector="canvasMainMenuBtn:" destination="nnB-X3-Mrs" id="hy7-g6-1Bw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="menu.png" id="xv4-Qv-F6t">
+                            <connections>
+                                <action selector="canvasNavigatorPanelBtn:" destination="nnB-X3-Mrs" id="EWS-rm-ryX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="canvasMainView" destination="8te-ba-KmQ" id="bgg-d9-gPs"/>
+                        <segue destination="48P-Xn-eDv" kind="show" identifier="CanvasNavigationPanelTableView" id="5ot-Bi-ost"/>
+                        <segue destination="eUR-IH-0wz" kind="show" identifier="CanvasMainMenuTableView" id="gwY-fL-c0P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qdn-sJ-hGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="-3009"/>
+        </scene>
+        <!--Canvas Navigation Panel Controller-->
+        <scene sceneID="AJF-Tn-XJq">
+            <objects>
+                <tableViewController storyboardIdentifier="CanvasNavigationPanelTableView" id="48P-Xn-eDv" customClass="CanvasNavigationPanelController" customModule="TopologyManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HmV-2N-9sd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="obU-xw-994">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="obU-xw-994" id="Xod-xf-jAa">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="48P-Xn-eDv" id="AF0-W0-6Lv"/>
+                            <outlet property="delegate" destination="48P-Xn-eDv" id="mdo-c3-Obg"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="mainMenuTableView" destination="HmV-2N-9sd" id="axq-FO-N8Z"/>
+                        <outlet property="navigationPanelTableView" destination="HmV-2N-9sd" id="LzG-Dx-vWu"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8EI-w8-1nK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="-3009"/>
+        </scene>
+        <!--Topology Management-->
+        <scene sceneID="mAN-x5-FlG">
+            <objects>
+                <navigationController id="lCj-Ir-sAI" customClass="CanvasSideBarNavigationController" customModule="TopologyManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Topology Management" image="configeditor.png" id="ET2-qJ-avP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e04-zz-4Kf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nnB-X3-Mrs" kind="relationship" relationship="rootViewController" id="4Wy-9U-ClY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTf-iV-6HB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="-3009"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dgx-vk-k1P">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HCa-AN-c5H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="DtT-al-d4c">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lCj-Ir-sAI" kind="relationship" relationship="viewControllers" id="bGr-Qh-jqL"/>
+                        <segue destination="PUP-Ar-vet" kind="relationship" relationship="viewControllers" id="tPZ-3r-UVt"/>
+                        <segue destination="lf6-ms-Hft" kind="relationship" relationship="viewControllers" id="e0t-yl-FJn"/>
+                        <segue destination="ShN-z3-IzT" kind="relationship" relationship="viewControllers" id="4Wn-7f-7x3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dqc-7D-1LB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="-3009"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RM.png" width="30" height="35"/>
+        <image name="Statistics.png" width="30" height="35"/>
+        <image name="configeditor.png" width="30" height="35"/>
+        <image name="menu.png" width="30" height="30"/>
+        <image name="narraLogo.png" width="28" height="30"/>
+        <image name="topology.png" width="30" height="35"/>
+    </resources>
+</document>
