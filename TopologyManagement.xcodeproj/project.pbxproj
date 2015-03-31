@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE089F1D1AC9016F00C6E5DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F1C1AC9016F00C6E5DE /* AppDelegate.swift */; };
+		CE089F201AC9016F00C6E5DE /* TopologyManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE089F1E1AC9016F00C6E5DE /* TopologyManagement.xcdatamodeld */; };
+		CE089F251AC9016F00C6E5DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE089F231AC9016F00C6E5DE /* Main.storyboard */; };
+		CE089F271AC9016F00C6E5DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE089F261AC9016F00C6E5DE /* Images.xcassets */; };
+		CE089F2A1AC9016F00C6E5DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE089F281AC9016F00C6E5DE /* LaunchScreen.xib */; };
+		CE089F361AC9016F00C6E5DE /* TopologyManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F351AC9016F00C6E5DE /* TopologyManagementTests.swift */; };
+		CE089F721AC9048800C6E5DE /* Admin.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F681AC9048800C6E5DE /* Admin.png */; };
+		CE089F731AC9048800C6E5DE /* Admin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F691AC9048800C6E5DE /* Admin@2x.png */; };
+		CE089F741AC9048800C6E5DE /* configeditor.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6A1AC9048800C6E5DE /* configeditor.png */; };
+		CE089F751AC9048800C6E5DE /* configeditor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6B1AC9048800C6E5DE /* configeditor@2x.png */; };
+		CE089F761AC9048800C6E5DE /* RM.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6C1AC9048800C6E5DE /* RM.png */; };
+		CE089F771AC9048800C6E5DE /* RM@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6D1AC9048800C6E5DE /* RM@2x.png */; };
+		CE089F781AC9048800C6E5DE /* Statistics.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6E1AC9048800C6E5DE /* Statistics.png */; };
+		CE089F791AC9048800C6E5DE /* Statistics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6F1AC9048800C6E5DE /* Statistics@2x.png */; };
+		CE089F7A1AC9048800C6E5DE /* topology.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F701AC9048800C6E5DE /* topology.png */; };
+		CE089F7B1AC9048800C6E5DE /* topology@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F711AC9048800C6E5DE /* topology@2x.png */; };
+		CE089F851AC9619B00C6E5DE /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F831AC9619B00C6E5DE /* ENSideMenu.swift */; };
+		CE089F861AC9619B00C6E5DE /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F841AC9619B00C6E5DE /* ENSideMenuNavigationController.swift */; };
+		CE089F891AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F881AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift */; };
+		CE089F8B1AC963A500C6E5DE /* CanvasSideBarTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F8A1AC963A500C6E5DE /* CanvasSideBarTableController.swift */; };
+		CE089F8D1AC965B800C6E5DE /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F8C1AC965B800C6E5DE /* CanvasViewController.swift */; };
+		CE089F8F1AC9841D00C6E5DE /* narraLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F8E1AC9841D00C6E5DE /* narraLogo.png */; };
+		CE089F931AC9853000C6E5DE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F921AC9853000C6E5DE /* menu.png */; };
+		CE089F991AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */; };
+		CE089F9B1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE089F301AC9016F00C6E5DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE089F0F1AC9016F00C6E5DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE089F161AC9016F00C6E5DE;
+			remoteInfo = TopologyManagement;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE089F171AC9016F00C6E5DE /* TopologyManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopologyManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE089F1B1AC9016F00C6E5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE089F1C1AC9016F00C6E5DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE089F1F1AC9016F00C6E5DE /* TopologyManagement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TopologyManagement.xcdatamodel; sourceTree = "<group>"; };
+		CE089F241AC9016F00C6E5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE089F261AC9016F00C6E5DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE089F291AC9016F00C6E5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CE089F2F1AC9016F00C6E5DE /* TopologyManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopologyManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE089F341AC9016F00C6E5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE089F351AC9016F00C6E5DE /* TopologyManagementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyManagementTests.swift; sourceTree = "<group>"; };
+		CE089F681AC9048800C6E5DE /* Admin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Admin.png; sourceTree = "<group>"; };
+		CE089F691AC9048800C6E5DE /* Admin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Admin@2x.png"; sourceTree = "<group>"; };
+		CE089F6A1AC9048800C6E5DE /* configeditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = configeditor.png; sourceTree = "<group>"; };
+		CE089F6B1AC9048800C6E5DE /* configeditor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "configeditor@2x.png"; sourceTree = "<group>"; };
+		CE089F6C1AC9048800C6E5DE /* RM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RM.png; sourceTree = "<group>"; };
+		CE089F6D1AC9048800C6E5DE /* RM@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RM@2x.png"; sourceTree = "<group>"; };
+		CE089F6E1AC9048800C6E5DE /* Statistics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Statistics.png; sourceTree = "<group>"; };
+		CE089F6F1AC9048800C6E5DE /* Statistics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Statistics@2x.png"; sourceTree = "<group>"; };
+		CE089F701AC9048800C6E5DE /* topology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topology.png; sourceTree = "<group>"; };
+		CE089F711AC9048800C6E5DE /* topology@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topology@2x.png"; sourceTree = "<group>"; };
+		CE089F831AC9619B00C6E5DE /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		CE089F841AC9619B00C6E5DE /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		CE089F881AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasSideBarNavigationController.swift; sourceTree = "<group>"; };
+		CE089F8A1AC963A500C6E5DE /* CanvasSideBarTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasSideBarTableController.swift; sourceTree = "<group>"; };
+		CE089F8C1AC965B800C6E5DE /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		CE089F8E1AC9841D00C6E5DE /* narraLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = narraLogo.png; sourceTree = "<group>"; };
+		CE089F921AC9853000C6E5DE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasNavigationPanelController.swift; sourceTree = "<group>"; };
+		CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasMainMenuController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE089F141AC9016F00C6E5DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE089F2C1AC9016F00C6E5DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE089F0E1AC9016F00C6E5DE = {
+			isa = PBXGroup;
+			children = (
+				CE089F191AC9016F00C6E5DE /* TopologyManagement */,
+				CE089F321AC9016F00C6E5DE /* TopologyManagementTests */,
+				CE089F181AC9016F00C6E5DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE089F181AC9016F00C6E5DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE089F171AC9016F00C6E5DE /* TopologyManagement.app */,
+				CE089F2F1AC9016F00C6E5DE /* TopologyManagementTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE089F191AC9016F00C6E5DE /* TopologyManagement */ = {
+			isa = PBXGroup;
+			children = (
+				CE089F7C1AC95D0C00C6E5DE /* Library */,
+				CE089F1C1AC9016F00C6E5DE /* AppDelegate.swift */,
+				CE089F871AC961C400C6E5DE /* Controllers */,
+				CE089F231AC9016F00C6E5DE /* Main.storyboard */,
+				CE089F261AC9016F00C6E5DE /* Images.xcassets */,
+				CE089F281AC9016F00C6E5DE /* LaunchScreen.xib */,
+				CE089F1E1AC9016F00C6E5DE /* TopologyManagement.xcdatamodeld */,
+				CE089F1A1AC9016F00C6E5DE /* Supporting Files */,
+			);
+			path = TopologyManagement;
+			sourceTree = "<group>";
+		};
+		CE089F1A1AC9016F00C6E5DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE089F1B1AC9016F00C6E5DE /* Info.plist */,
+				CE089F3F1AC9020C00C6E5DE /* navigation tab */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE089F321AC9016F00C6E5DE /* TopologyManagementTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE089F351AC9016F00C6E5DE /* TopologyManagementTests.swift */,
+				CE089F331AC9016F00C6E5DE /* Supporting Files */,
+			);
+			path = TopologyManagementTests;
+			sourceTree = "<group>";
+		};
+		CE089F331AC9016F00C6E5DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE089F341AC9016F00C6E5DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE089F3F1AC9020C00C6E5DE /* navigation tab */ = {
+			isa = PBXGroup;
+			children = (
+				CE089F681AC9048800C6E5DE /* Admin.png */,
+				CE089F691AC9048800C6E5DE /* Admin@2x.png */,
+				CE089F6A1AC9048800C6E5DE /* configeditor.png */,
+				CE089F6B1AC9048800C6E5DE /* configeditor@2x.png */,
+				CE089F921AC9853000C6E5DE /* menu.png */,
+				CE089F6C1AC9048800C6E5DE /* RM.png */,
+				CE089F8E1AC9841D00C6E5DE /* narraLogo.png */,
+				CE089F6D1AC9048800C6E5DE /* RM@2x.png */,
+				CE089F6E1AC9048800C6E5DE /* Statistics.png */,
+				CE089F6F1AC9048800C6E5DE /* Statistics@2x.png */,
+				CE089F701AC9048800C6E5DE /* topology.png */,
+				CE089F711AC9048800C6E5DE /* topology@2x.png */,
+			);
+			name = "navigation tab";
+			sourceTree = "<group>";
+		};
+		CE089F7C1AC95D0C00C6E5DE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CE089F831AC9619B00C6E5DE /* ENSideMenu.swift */,
+				CE089F841AC9619B00C6E5DE /* ENSideMenuNavigationController.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		CE089F871AC961C400C6E5DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE089F881AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift */,
+				CE089F8A1AC963A500C6E5DE /* CanvasSideBarTableController.swift */,
+				CE089F8C1AC965B800C6E5DE /* CanvasViewController.swift */,
+				CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */,
+				CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE089F161AC9016F00C6E5DE /* TopologyManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE089F391AC9016F00C6E5DE /* Build configuration list for PBXNativeTarget "TopologyManagement" */;
+			buildPhases = (
+				CE089F131AC9016F00C6E5DE /* Sources */,
+				CE089F141AC9016F00C6E5DE /* Frameworks */,
+				CE089F151AC9016F00C6E5DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopologyManagement;
+			productName = TopologyManagement;
+			productReference = CE089F171AC9016F00C6E5DE /* TopologyManagement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE089F2E1AC9016F00C6E5DE /* TopologyManagementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE089F3C1AC9016F00C6E5DE /* Build configuration list for PBXNativeTarget "TopologyManagementTests" */;
+			buildPhases = (
+				CE089F2B1AC9016F00C6E5DE /* Sources */,
+				CE089F2C1AC9016F00C6E5DE /* Frameworks */,
+				CE089F2D1AC9016F00C6E5DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE089F311AC9016F00C6E5DE /* PBXTargetDependency */,
+			);
+			name = TopologyManagementTests;
+			productName = TopologyManagementTests;
+			productReference = CE089F2F1AC9016F00C6E5DE /* TopologyManagementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE089F0F1AC9016F00C6E5DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Narra Systems Corp.";
+				TargetAttributes = {
+					CE089F161AC9016F00C6E5DE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					CE089F2E1AC9016F00C6E5DE = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = CE089F161AC9016F00C6E5DE;
+					};
+				};
+			};
+			buildConfigurationList = CE089F121AC9016F00C6E5DE /* Build configuration list for PBXProject "TopologyManagement" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE089F0E1AC9016F00C6E5DE;
+			productRefGroup = CE089F181AC9016F00C6E5DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE089F161AC9016F00C6E5DE /* TopologyManagement */,
+				CE089F2E1AC9016F00C6E5DE /* TopologyManagementTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE089F151AC9016F00C6E5DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE089F7B1AC9048800C6E5DE /* topology@2x.png in Resources */,
+				CE089F761AC9048800C6E5DE /* RM.png in Resources */,
+				CE089F751AC9048800C6E5DE /* configeditor@2x.png in Resources */,
+				CE089F251AC9016F00C6E5DE /* Main.storyboard in Resources */,
+				CE089F721AC9048800C6E5DE /* Admin.png in Resources */,
+				CE089F8F1AC9841D00C6E5DE /* narraLogo.png in Resources */,
+				CE089F781AC9048800C6E5DE /* Statistics.png in Resources */,
+				CE089F741AC9048800C6E5DE /* configeditor.png in Resources */,
+				CE089F2A1AC9016F00C6E5DE /* LaunchScreen.xib in Resources */,
+				CE089F271AC9016F00C6E5DE /* Images.xcassets in Resources */,
+				CE089F7A1AC9048800C6E5DE /* topology.png in Resources */,
+				CE089F931AC9853000C6E5DE /* menu.png in Resources */,
+				CE089F731AC9048800C6E5DE /* Admin@2x.png in Resources */,
+				CE089F771AC9048800C6E5DE /* RM@2x.png in Resources */,
+				CE089F791AC9048800C6E5DE /* Statistics@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE089F2D1AC9016F00C6E5DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE089F131AC9016F00C6E5DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE089F991AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift in Sources */,
+				CE089F851AC9619B00C6E5DE /* ENSideMenu.swift in Sources */,
+				CE089F9B1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift in Sources */,
+				CE089F1D1AC9016F00C6E5DE /* AppDelegate.swift in Sources */,
+				CE089F891AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift in Sources */,
+				CE089F861AC9619B00C6E5DE /* ENSideMenuNavigationController.swift in Sources */,
+				CE089F201AC9016F00C6E5DE /* TopologyManagement.xcdatamodeld in Sources */,
+				CE089F8D1AC965B800C6E5DE /* CanvasViewController.swift in Sources */,
+				CE089F8B1AC963A500C6E5DE /* CanvasSideBarTableController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE089F2B1AC9016F00C6E5DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE089F361AC9016F00C6E5DE /* TopologyManagementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE089F311AC9016F00C6E5DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE089F161AC9016F00C6E5DE /* TopologyManagement */;
+			targetProxy = CE089F301AC9016F00C6E5DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE089F231AC9016F00C6E5DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE089F241AC9016F00C6E5DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE089F281AC9016F00C6E5DE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE089F291AC9016F00C6E5DE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE089F371AC9016F00C6E5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE089F381AC9016F00C6E5DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE089F3A1AC9016F00C6E5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TopologyManagement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE089F3B1AC9016F00C6E5DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TopologyManagement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE089F3D1AC9016F00C6E5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TopologyManagementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopologyManagement.app/TopologyManagement";
+			};
+			name = Debug;
+		};
+		CE089F3E1AC9016F00C6E5DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TopologyManagementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopologyManagement.app/TopologyManagement";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE089F121AC9016F00C6E5DE /* Build configuration list for PBXProject "TopologyManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE089F371AC9016F00C6E5DE /* Debug */,
+				CE089F381AC9016F00C6E5DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE089F391AC9016F00C6E5DE /* Build configuration list for PBXNativeTarget "TopologyManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE089F3A1AC9016F00C6E5DE /* Debug */,
+				CE089F3B1AC9016F00C6E5DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE089F3C1AC9016F00C6E5DE /* Build configuration list for PBXNativeTarget "TopologyManagementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE089F3D1AC9016F00C6E5DE /* Debug */,
+				CE089F3E1AC9016F00C6E5DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE089F1E1AC9016F00C6E5DE /* TopologyManagement.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE089F1F1AC9016F00C6E5DE /* TopologyManagement.xcdatamodel */,
+			);
+			currentVersion = CE089F1F1AC9016F00C6E5DE /* TopologyManagement.xcdatamodel */;
+			path = TopologyManagement.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE089F0F1AC9016F00C6E5DE /* Project object */;
+}
