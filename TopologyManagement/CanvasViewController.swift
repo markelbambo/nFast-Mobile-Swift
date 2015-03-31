@@ -15,8 +15,8 @@ class CanvasViewController: UIViewController, ENSideMenuDelegate {
 
     }
     @IBAction func canvasNavigatorPanelBtn(sender: UIBarButtonItem) {
-        self.performSegueWithIdentifier("CanvasMainMenuTableView", sender: self)
-        //self.performSegueWithIdentifier("CanvasNavigationPanelTableView", sender: self)
+        //self.performSegueWithIdentifier("CanvasMainMenuTableView", sender: self)
+        self.performSegueWithIdentifier("CanvasNavigationPanelTableView", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

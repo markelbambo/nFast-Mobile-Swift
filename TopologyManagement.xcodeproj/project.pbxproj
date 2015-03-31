@@ -32,6 +32,7 @@
 		CE089F931AC9853000C6E5DE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F921AC9853000C6E5DE /* menu.png */; };
 		CE089F991AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */; };
 		CE089F9B1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */; };
+		CE4E44891ACA62FF003D4C92 /* NFAST.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E44881ACA62FF003D4C92 /* NFAST.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		CE089F921AC9853000C6E5DE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasNavigationPanelController.swift; sourceTree = "<group>"; };
 		CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasMainMenuController.swift; sourceTree = "<group>"; };
+		CE4E44881ACA62FF003D4C92 /* NFAST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NFAST.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		CE089F191AC9016F00C6E5DE /* TopologyManagement */ = {
 			isa = PBXGroup;
 			children = (
+				CE4E44871ACA62EB003D4C92 /* Resources */,
 				CE089F7C1AC95D0C00C6E5DE /* Library */,
 				CE089F1C1AC9016F00C6E5DE /* AppDelegate.swift */,
 				CE089F871AC961C400C6E5DE /* Controllers */,
@@ -145,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				CE089F1B1AC9016F00C6E5DE /* Info.plist */,
-				CE089F3F1AC9020C00C6E5DE /* navigation tab */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,6 +217,15 @@
 				CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */,
 			);
 			name = "TM Controllers";
+			sourceTree = "<group>";
+		};
+		CE4E44871ACA62EB003D4C92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE4E44881ACA62FF003D4C92 /* NFAST.png */,
+				CE089F3F1AC9020C00C6E5DE /* navigation tab */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +316,7 @@
 				CE089F8F1AC9841D00C6E5DE /* narraLogo.png in Resources */,
 				CE089F781AC9048800C6E5DE /* Statistics.png in Resources */,
 				CE089F741AC9048800C6E5DE /* configeditor.png in Resources */,
+				CE4E44891ACA62FF003D4C92 /* NFAST.png in Resources */,
 				CE089F2A1AC9016F00C6E5DE /* LaunchScreen.xib in Resources */,
 				CE089F271AC9016F00C6E5DE /* Images.xcassets in Resources */,
 				CE089F7A1AC9048800C6E5DE /* topology.png in Resources */,
