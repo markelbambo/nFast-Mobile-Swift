@@ -94,6 +94,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6ED36B321ACA5B0E000C9B1C /* RM Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "RM Controllers";
+			sourceTree = "<group>";
+		};
 		CE089F0E1AC9016F00C6E5DE = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +191,7 @@
 		CE089F871AC961C400C6E5DE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6ED36B321ACA5B0E000C9B1C /* RM Controllers */,
 				CE089F881AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift */,
 				CE089F8A1AC963A500C6E5DE /* CanvasSideBarTableController.swift */,
 				CE089F8C1AC965B800C6E5DE /* CanvasViewController.swift */,

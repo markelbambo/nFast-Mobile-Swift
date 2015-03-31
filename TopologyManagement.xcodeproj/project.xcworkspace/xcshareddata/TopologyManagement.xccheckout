@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>92223F76-7C8C-4D03-9011-1276061997A4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TopologyManagement</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>468165C87A6E759B3B9EE33E945BF27A22162DC8</key>
+		<string>https://github.com/markelbambo/nFast-Mobile-Swift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TopologyManagement.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>468165C87A6E759B3B9EE33E945BF27A22162DC8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/markelbambo/nFast-Mobile-Swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>468165C87A6E759B3B9EE33E945BF27A22162DC8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>468165C87A6E759B3B9EE33E945BF27A22162DC8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>nFast-Mobile-Swift</string>
+		</dict>
+	</array>
+</dict>
+</plist>
