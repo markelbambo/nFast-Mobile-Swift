@@ -200,13 +200,21 @@
 			children = (
 				99BFD2121ACA5C6700EF66D1 /* Auto-D Controllers */,
 				6ED36B321ACA5B0E000C9B1C /* RM Controllers */,
+				CE4E44861ACA5F81003D4C92 /* TM Controllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CE4E44861ACA5F81003D4C92 /* TM Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				CE089F881AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift */,
 				CE089F8A1AC963A500C6E5DE /* CanvasSideBarTableController.swift */,
 				CE089F8C1AC965B800C6E5DE /* CanvasViewController.swift */,
 				CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */,
 				CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */,
 			);
-			name = Controllers;
+			name = "TM Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
