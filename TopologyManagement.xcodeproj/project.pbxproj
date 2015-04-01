@@ -32,6 +32,30 @@
 		CE089F931AC9853000C6E5DE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F921AC9853000C6E5DE /* menu.png */; };
 		CE089F991AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */; };
 		CE089F9B1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */; };
+		CE4004361ACADBFB00B689EF /* topology-console.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004351ACADBFB00B689EF /* topology-console.png */; };
+		CE4004381ACADC2500B689EF /* topology_sanitytest.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004371ACADC2500B689EF /* topology_sanitytest.png */; };
+		CE40043A1ACADC5A00B689EF /* canvasmapping.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004391ACADC5A00B689EF /* canvasmapping.png */; };
+		CE40043C1ACADC7900B689EF /* zoomdefault.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40043B1ACADC7900B689EF /* zoomdefault.png */; };
+		CE40043E1ACADCB700B689EF /* configname.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40043D1ACADCB700B689EF /* configname.png */; };
+		CE4004401ACADCCE00B689EF /* historyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40043F1ACADCCE00B689EF /* historyIcon.png */; };
+		CE4004541ACB8EF100B689EF /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004421ACB8EF100B689EF /* config.png */; };
+		CE4004551ACB8EF100B689EF /* debug.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004431ACB8EF100B689EF /* debug.png */; };
+		CE4004561ACB8EF100B689EF /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004441ACB8EF100B689EF /* delete.png */; };
+		CE4004571ACB8EF100B689EF /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004451ACB8EF100B689EF /* edit.png */; };
+		CE4004581ACB8EF100B689EF /* editgrid.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004461ACB8EF100B689EF /* editgrid.png */; };
+		CE4004591ACB8EF100B689EF /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004471ACB8EF100B689EF /* filter.png */; };
+		CE40045A1ACB8EF100B689EF /* hidegrid.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004481ACB8EF100B689EF /* hidegrid.png */; };
+		CE40045B1ACB8EF100B689EF /* load.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004491ACB8EF100B689EF /* load.png */; };
+		CE40045C1ACB8EF100B689EF /* power.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044A1ACB8EF100B689EF /* power.png */; };
+		CE40045D1ACB8EF100B689EF /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044B1ACB8EF100B689EF /* save.png */; };
+		CE40045E1ACB8EF100B689EF /* saveas.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044C1ACB8EF100B689EF /* saveas.png */; };
+		CE40045F1ACB8EF100B689EF /* savediagram.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044D1ACB8EF100B689EF /* savediagram.png */; };
+		CE4004601ACB8EF100B689EF /* saveinfo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044E1ACB8EF100B689EF /* saveinfo.png */; };
+		CE4004611ACB8EF100B689EF /* showgrid.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044F1ACB8EF100B689EF /* showgrid.png */; };
+		CE4004621ACB8EF100B689EF /* timepicker_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004501ACB8EF100B689EF /* timepicker_disable.png */; };
+		CE4004631ACB8EF100B689EF /* timepicker_enable.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004511ACB8EF100B689EF /* timepicker_enable.png */; };
+		CE4004641ACB8EF100B689EF /* tools.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004521ACB8EF100B689EF /* tools.png */; };
+		CE4004651ACB8EF100B689EF /* viewoption.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004531ACB8EF100B689EF /* viewoption.png */; };
 		CE4E44891ACA62FF003D4C92 /* NFAST.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E44881ACA62FF003D4C92 /* NFAST.png */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +99,30 @@
 		CE089F921AC9853000C6E5DE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasNavigationPanelController.swift; sourceTree = "<group>"; };
 		CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasMainMenuController.swift; sourceTree = "<group>"; };
+		CE4004351ACADBFB00B689EF /* topology-console.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topology-console.png"; sourceTree = "<group>"; };
+		CE4004371ACADC2500B689EF /* topology_sanitytest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topology_sanitytest.png; sourceTree = "<group>"; };
+		CE4004391ACADC5A00B689EF /* canvasmapping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canvasmapping.png; sourceTree = "<group>"; };
+		CE40043B1ACADC7900B689EF /* zoomdefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoomdefault.png; sourceTree = "<group>"; };
+		CE40043D1ACADCB700B689EF /* configname.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = configname.png; sourceTree = "<group>"; };
+		CE40043F1ACADCCE00B689EF /* historyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = historyIcon.png; sourceTree = "<group>"; };
+		CE4004421ACB8EF100B689EF /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config.png; sourceTree = "<group>"; };
+		CE4004431ACB8EF100B689EF /* debug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = debug.png; sourceTree = "<group>"; };
+		CE4004441ACB8EF100B689EF /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		CE4004451ACB8EF100B689EF /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		CE4004461ACB8EF100B689EF /* editgrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editgrid.png; sourceTree = "<group>"; };
+		CE4004471ACB8EF100B689EF /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		CE4004481ACB8EF100B689EF /* hidegrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hidegrid.png; sourceTree = "<group>"; };
+		CE4004491ACB8EF100B689EF /* load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load.png; sourceTree = "<group>"; };
+		CE40044A1ACB8EF100B689EF /* power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = power.png; sourceTree = "<group>"; };
+		CE40044B1ACB8EF100B689EF /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		CE40044C1ACB8EF100B689EF /* saveas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveas.png; sourceTree = "<group>"; };
+		CE40044D1ACB8EF100B689EF /* savediagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = savediagram.png; sourceTree = "<group>"; };
+		CE40044E1ACB8EF100B689EF /* saveinfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveinfo.png; sourceTree = "<group>"; };
+		CE40044F1ACB8EF100B689EF /* showgrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = showgrid.png; sourceTree = "<group>"; };
+		CE4004501ACB8EF100B689EF /* timepicker_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timepicker_disable.png; sourceTree = "<group>"; };
+		CE4004511ACB8EF100B689EF /* timepicker_enable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timepicker_enable.png; sourceTree = "<group>"; };
+		CE4004521ACB8EF100B689EF /* tools.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tools.png; sourceTree = "<group>"; };
+		CE4004531ACB8EF100B689EF /* viewoption.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewoption.png; sourceTree = "<group>"; };
 		CE4E44881ACA62FF003D4C92 /* NFAST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NFAST.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +255,44 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		CE4004341ACADB8E00B689EF /* navigation panel */ = {
+			isa = PBXGroup;
+			children = (
+				CE4004351ACADBFB00B689EF /* topology-console.png */,
+				CE4004391ACADC5A00B689EF /* canvasmapping.png */,
+				CE40043D1ACADCB700B689EF /* configname.png */,
+				CE40043F1ACADCCE00B689EF /* historyIcon.png */,
+				CE40043B1ACADC7900B689EF /* zoomdefault.png */,
+				CE4004371ACADC2500B689EF /* topology_sanitytest.png */,
+			);
+			name = "navigation panel";
+			sourceTree = "<group>";
+		};
+		CE4004411ACB8DD200B689EF /* main menu */ = {
+			isa = PBXGroup;
+			children = (
+				CE4004421ACB8EF100B689EF /* config.png */,
+				CE4004431ACB8EF100B689EF /* debug.png */,
+				CE4004441ACB8EF100B689EF /* delete.png */,
+				CE4004451ACB8EF100B689EF /* edit.png */,
+				CE4004461ACB8EF100B689EF /* editgrid.png */,
+				CE4004471ACB8EF100B689EF /* filter.png */,
+				CE4004481ACB8EF100B689EF /* hidegrid.png */,
+				CE4004491ACB8EF100B689EF /* load.png */,
+				CE40044A1ACB8EF100B689EF /* power.png */,
+				CE40044B1ACB8EF100B689EF /* save.png */,
+				CE40044C1ACB8EF100B689EF /* saveas.png */,
+				CE40044D1ACB8EF100B689EF /* savediagram.png */,
+				CE40044E1ACB8EF100B689EF /* saveinfo.png */,
+				CE40044F1ACB8EF100B689EF /* showgrid.png */,
+				CE4004501ACB8EF100B689EF /* timepicker_disable.png */,
+				CE4004511ACB8EF100B689EF /* timepicker_enable.png */,
+				CE4004521ACB8EF100B689EF /* tools.png */,
+				CE4004531ACB8EF100B689EF /* viewoption.png */,
+			);
+			name = "main menu";
+			sourceTree = "<group>";
+		};
 		CE4E44861ACA5F81003D4C92 /* TM Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +308,9 @@
 		CE4E44871ACA62EB003D4C92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE4004411ACB8DD200B689EF /* main menu */,
 				CE4E44881ACA62FF003D4C92 /* NFAST.png */,
+				CE4004341ACADB8E00B689EF /* navigation panel */,
 				CE089F3F1AC9020C00C6E5DE /* navigation tab */,
 			);
 			name = Resources;
@@ -277,6 +365,7 @@
 				TargetAttributes = {
 					CE089F161AC9016F00C6E5DE = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 55697WCSNX;
 					};
 					CE089F2E1AC9016F00C6E5DE = {
 						CreatedOnToolsVersion = 6.2;
@@ -309,20 +398,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE089F7B1AC9048800C6E5DE /* topology@2x.png in Resources */,
+				CE40043E1ACADCB700B689EF /* configname.png in Resources */,
+				CE40045F1ACB8EF100B689EF /* savediagram.png in Resources */,
 				CE089F761AC9048800C6E5DE /* RM.png in Resources */,
+				CE4004571ACB8EF100B689EF /* edit.png in Resources */,
+				CE40045A1ACB8EF100B689EF /* hidegrid.png in Resources */,
+				CE4004611ACB8EF100B689EF /* showgrid.png in Resources */,
+				CE4004601ACB8EF100B689EF /* saveinfo.png in Resources */,
+				CE4004561ACB8EF100B689EF /* delete.png in Resources */,
 				CE089F751AC9048800C6E5DE /* configeditor@2x.png in Resources */,
 				CE089F251AC9016F00C6E5DE /* Main.storyboard in Resources */,
+				CE40043A1ACADC5A00B689EF /* canvasmapping.png in Resources */,
+				CE4004381ACADC2500B689EF /* topology_sanitytest.png in Resources */,
+				CE4004621ACB8EF100B689EF /* timepicker_disable.png in Resources */,
+				CE40045D1ACB8EF100B689EF /* save.png in Resources */,
 				CE089F721AC9048800C6E5DE /* Admin.png in Resources */,
+				CE40045B1ACB8EF100B689EF /* load.png in Resources */,
+				CE4004361ACADBFB00B689EF /* topology-console.png in Resources */,
+				CE40043C1ACADC7900B689EF /* zoomdefault.png in Resources */,
 				CE089F8F1AC9841D00C6E5DE /* narraLogo.png in Resources */,
+				CE4004401ACADCCE00B689EF /* historyIcon.png in Resources */,
+				CE4004581ACB8EF100B689EF /* editgrid.png in Resources */,
 				CE089F781AC9048800C6E5DE /* Statistics.png in Resources */,
+				CE4004641ACB8EF100B689EF /* tools.png in Resources */,
+				CE4004631ACB8EF100B689EF /* timepicker_enable.png in Resources */,
 				CE089F741AC9048800C6E5DE /* configeditor.png in Resources */,
 				CE4E44891ACA62FF003D4C92 /* NFAST.png in Resources */,
 				CE089F2A1AC9016F00C6E5DE /* LaunchScreen.xib in Resources */,
+				CE40045E1ACB8EF100B689EF /* saveas.png in Resources */,
+				CE4004651ACB8EF100B689EF /* viewoption.png in Resources */,
+				CE4004541ACB8EF100B689EF /* config.png in Resources */,
 				CE089F271AC9016F00C6E5DE /* Images.xcassets in Resources */,
 				CE089F7A1AC9048800C6E5DE /* topology.png in Resources */,
+				CE4004551ACB8EF100B689EF /* debug.png in Resources */,
+				CE4004591ACB8EF100B689EF /* filter.png in Resources */,
 				CE089F931AC9853000C6E5DE /* menu.png in Resources */,
 				CE089F731AC9048800C6E5DE /* Admin@2x.png in Resources */,
 				CE089F771AC9048800C6E5DE /* RM@2x.png in Resources */,
+				CE40045C1ACB8EF100B689EF /* power.png in Resources */,
 				CE089F791AC9048800C6E5DE /* Statistics@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TopologyManagement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -486,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TopologyManagement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

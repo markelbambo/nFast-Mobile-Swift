@@ -29,7 +29,6 @@ class CanvasViewController: UIViewController, ENSideMenuDelegate {
         let screenWidth = screenSize.width - 30
         let screenHeight = screenSize.height - 100
         
-        
         var canvasView = UIView()
         var l2: CALayer {
             return canvasView.layer
