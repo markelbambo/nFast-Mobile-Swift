@@ -7,8 +7,12 @@
 //
 import UIKit
 
-class CanvasSideBarTableViewController: UITableViewController {
+class CanvasSideBarTableViewController: UITableViewController{
     var selectedMenuItem : Int = 0
+    let sidebarHeader = ["Domain","TestTool","Device","Server","Topology","Connectivity"]
+    let sidebarHeaderImages = ["Domain","Testtool","Device","Server","topologylist","Connectivity"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,7 +20,7 @@ class CanvasSideBarTableViewController: UITableViewController {
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
         tableView.backgroundColor = UIColor.clearColor()
-        tableView.scrollsToTop = false
+        //tableView.scrollsToTop = true
         
         // Preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
@@ -29,6 +33,7 @@ class CanvasSideBarTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -38,9 +43,8 @@ class CanvasSideBarTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 4
+        return sidebarHeader.count
     }
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("CELL") as? UITableViewCell
@@ -48,25 +52,61 @@ class CanvasSideBarTableViewController: UITableViewController {
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
             cell!.backgroundColor = UIColor.clearColor()
-            cell!.textLabel?.textColor = UIColor.darkGrayColor()
-            let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
-            selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
-            cell!.selectedBackgroundView = selectedBackgroundView
+
+//            if(indexPath.row == 0){
+//                
+//                let button : UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+//                button.frame = CGRectMake(40, 60, 100, 24)
+//                
+//                let cellHeight: CGFloat = 44.0
+//                button.center = CGPoint(x: view.bounds.width / 2.0, y: cellHeight / 2.0)
+//                
+//                //button.backgroundColor = UIColor.redColor()
+//                //button.addTarget(self, action: "buttonClicked:", forControlEvents:
+//                //    UIControlEvents.TouchUpInside)
+//                button.setTitle("Domain", forState: UIControlState.Normal)
+//                cell!.addSubview(button)
+//            }else{
+                cell!.textLabel?.textColor = UIColor.darkGrayColor()
+                let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
+                selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
+                cell!.selectedBackgroundView = selectedBackgroundView
+                
+                cell!.textLabel?.text = sidebarHeader[indexPath.row]
+                var imageName = UIImage(named: sidebarHeaderImages[indexPath.row])
+                cell!.imageView!.image = imageName
+            //}
         }
-        
-        cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
-        
         return cell!
     }
+//    func buttonClicked(sender: UIButton!) {
+//        CanvasViewController().domainBtnTrigger()
+//    } 
     
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let  headerCell = tableView.dequeueReusableCellWithIdentifier("CELLhader") as? UITableViewCell
+        headerCell!.backgroundColor = UIColor(netHex:0x39599C)
+        println("sections==\(section)")
+        switch (section) {
+        case 0:
+            headerCell!.textLabel?.text = "Config";
+        case 1:
+            headerCell!.textLabel?.text = "Tools";
+        case 2:
+            headerCell!.textLabel?.text = "View Options";
+        default:
+            headerCell!.textLabel?.text = "Other";
+        }
+        return headerCell
+    }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 50.0
     }
-    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         println("did select row: \(indexPath.row)")
-        
+        println("selectedMEnuItem\(selectedMenuItem)")
+        println("header==\(sidebarHeader[indexPath.row])")
         if (indexPath.row == selectedMenuItem) {
             return
         }
@@ -77,16 +117,16 @@ class CanvasSideBarTableViewController: UITableViewController {
         var destViewController : UIViewController
         switch (indexPath.row) {
         case 0:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainCanvasID") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker") as UIViewController
             break
         case 1:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainCanvasID")as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker")as UIViewController
             break
         case 2:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainCanvasID")as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker")as UIViewController
             break
         default:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainCanvasID") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker") as UIViewController
             break
         }
         sideMenuController()?.setContentViewController(destViewController)

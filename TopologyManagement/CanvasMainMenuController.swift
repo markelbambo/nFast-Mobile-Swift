@@ -8,41 +8,87 @@
 import UIKit
 
 class CanvasMainMenuController: UITableViewController{
-    @IBOutlet var mainMenuTableView: UITableView!
-    var items: [String] = ["We", "Heart", "Swift"]
+    let configSubMenus = ["Load","Save","Delete"]
+    let toolsSubMenus = ["Auto Discover","Console","Running Configuration","Sanity Test","Sanity Results","Configuration","Software"]
+    let viewsSubMenus = ["Custom View","Grid","Filter","Time Picker"]
+    let mainMenuImgs = ["Load":"load","Save":"save","Delete":"delete","Auto Discover":"autodiscover","Console":"logs","Running Configuration":"config","Sanity Test":"topology_sanitytest","Sanity Results":"showactivity","Configuration":"config","Software":"software","Custom View":"customview","Grid":"grid","Filter":"filter","Time Picker":"timepicker"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
-        tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.clearColor()
-        tableView.scrollsToTop = false
-        
-        // Preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
-        
-        self.mainMenuTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    func mainMenuTableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count;
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 3
     }
     
-    func mainMenuTableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch (section) {
+        case 0:
+            return configSubMenus.count
+        case 1:
+            return toolsSubMenus.count
+        case 2:
+            return viewsSubMenus.count
+        default:
+            return 0
+        }
+    }
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("mainMenuCell", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = self.items[indexPath.row]
-        
+        switch (indexPath.section) {
+        case 0:
+            cell.textLabel?.text = configSubMenus[indexPath.row]
+            var imageName = UIImage(named: mainMenuImgs[configSubMenus[indexPath.row]]!)
+            cell.imageView!.image = imageName
+        case 1:
+            cell.textLabel?.text = toolsSubMenus[indexPath.row]
+            var imageName = UIImage(named: mainMenuImgs[toolsSubMenus[indexPath.row]]!)
+            cell.imageView!.image = imageName
+        case 2:
+            cell.textLabel?.text = viewsSubMenus[indexPath.row]
+            var imageName = UIImage(named: mainMenuImgs[viewsSubMenus[indexPath.row]]!)
+            cell.imageView!.image = imageName
+        default:
+            cell.textLabel?.text = "Other"
+        }
         return cell
     }
-    
-    func mainMenuTableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        println("You selected cell #\(indexPath.row)!")
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        println("sectionssss==\(section)")
+        let  headerCell = tableView.dequeueReusableCellWithIdentifier("mainMenuHeaderCell") as MainMenuHeaderCell
+        headerCell.backgroundColor = UIColor(netHex:0x39599C)
+        switch (section) {
+        case 0:
+            headerCell.headerLabel.text = "Config";
+        case 1:
+            headerCell.headerLabel.text = "Tools";
+        case 2:
+            headerCell.headerLabel.text = "View Options";
+        default:
+            headerCell.headerLabel.text = "Other";
+        }
+        
+        return headerCell
     }
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 45.0
+    }
+    
+//    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 40))
+//        //footerView.backgroundColor = UIColor.blackColor()
+//        
+//        return footerView
+//    }
+//    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        return 20.0
+//    }
+    
 }

@@ -13,14 +13,8 @@
 		CE089F271AC9016F00C6E5DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE089F261AC9016F00C6E5DE /* Images.xcassets */; };
 		CE089F2A1AC9016F00C6E5DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE089F281AC9016F00C6E5DE /* LaunchScreen.xib */; };
 		CE089F361AC9016F00C6E5DE /* TopologyManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F351AC9016F00C6E5DE /* TopologyManagementTests.swift */; };
-		CE089F721AC9048800C6E5DE /* Admin.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F681AC9048800C6E5DE /* Admin.png */; };
-		CE089F731AC9048800C6E5DE /* Admin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F691AC9048800C6E5DE /* Admin@2x.png */; };
 		CE089F741AC9048800C6E5DE /* configeditor.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6A1AC9048800C6E5DE /* configeditor.png */; };
 		CE089F751AC9048800C6E5DE /* configeditor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6B1AC9048800C6E5DE /* configeditor@2x.png */; };
-		CE089F761AC9048800C6E5DE /* RM.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6C1AC9048800C6E5DE /* RM.png */; };
-		CE089F771AC9048800C6E5DE /* RM@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6D1AC9048800C6E5DE /* RM@2x.png */; };
-		CE089F781AC9048800C6E5DE /* Statistics.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6E1AC9048800C6E5DE /* Statistics.png */; };
-		CE089F791AC9048800C6E5DE /* Statistics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F6F1AC9048800C6E5DE /* Statistics@2x.png */; };
 		CE089F7A1AC9048800C6E5DE /* topology.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F701AC9048800C6E5DE /* topology.png */; };
 		CE089F7B1AC9048800C6E5DE /* topology@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE089F711AC9048800C6E5DE /* topology@2x.png */; };
 		CE089F851AC9619B00C6E5DE /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE089F831AC9619B00C6E5DE /* ENSideMenu.swift */; };
@@ -52,11 +46,39 @@
 		CE40045F1ACB8EF100B689EF /* savediagram.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044D1ACB8EF100B689EF /* savediagram.png */; };
 		CE4004601ACB8EF100B689EF /* saveinfo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044E1ACB8EF100B689EF /* saveinfo.png */; };
 		CE4004611ACB8EF100B689EF /* showgrid.png in Resources */ = {isa = PBXBuildFile; fileRef = CE40044F1ACB8EF100B689EF /* showgrid.png */; };
-		CE4004621ACB8EF100B689EF /* timepicker_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004501ACB8EF100B689EF /* timepicker_disable.png */; };
 		CE4004631ACB8EF100B689EF /* timepicker_enable.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004511ACB8EF100B689EF /* timepicker_enable.png */; };
 		CE4004641ACB8EF100B689EF /* tools.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004521ACB8EF100B689EF /* tools.png */; };
 		CE4004651ACB8EF100B689EF /* viewoption.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4004531ACB8EF100B689EF /* viewoption.png */; };
+		CE4B4F531AD0DC94009A4393 /* MainMenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4F521AD0DC94009A4393 /* MainMenuHeaderCell.swift */; };
+		CE4B4F551AD0F1B4009A4393 /* autodiscover.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F541AD0F1B4009A4393 /* autodiscover.png */; };
+		CE4B4F571AD0F21F009A4393 /* logs.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F561AD0F21F009A4393 /* logs.png */; };
+		CE4B4F591AD0F2C7009A4393 /* showactivity.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F581AD0F2C7009A4393 /* showactivity.png */; };
+		CE4B4F5B1AD0F31B009A4393 /* software.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F5A1AD0F31B009A4393 /* software.png */; };
+		CE4B4F5D1AD0F61B009A4393 /* customview.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F5C1AD0F61B009A4393 /* customview.png */; };
+		CE4B4F5F1AD0F652009A4393 /* timepicker.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F5E1AD0F652009A4393 /* timepicker.png */; };
+		CE4B4F631AD10A55009A4393 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4F621AD10A55009A4393 /* UIColor.swift */; };
+		CE4B4F651AD11883009A4393 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F641AD11883009A4393 /* grid.png */; };
+		CE4B4F681AD12BA1009A4393 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4F671AD12BA1009A4393 /* LoginViewController.swift */; };
+		CE4B4F6F1AD1E2F0009A4393 /* Connectivity.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F6A1AD1E2F0009A4393 /* Connectivity.png */; };
+		CE4B4F701AD1E2F0009A4393 /* Device.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F6B1AD1E2F0009A4393 /* Device.png */; };
+		CE4B4F711AD1E2F0009A4393 /* Server.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F6C1AD1E2F0009A4393 /* Server.png */; };
+		CE4B4F721AD1E2F0009A4393 /* Testtool.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F6D1AD1E2F0009A4393 /* Testtool.png */; };
+		CE4B4F731AD1E2F0009A4393 /* topologylist.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4F6E1AD1E2F0009A4393 /* topologylist.png */; };
+		CE4B4F751AD223D5009A4393 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4F741AD223D5009A4393 /* TableViewHelper.swift */; };
+		CE4B4FA81AD26E86009A4393 /* SidebarCanvasDomainPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4FA71AD26E86009A4393 /* SidebarCanvasDomainPicker.swift */; };
+		CE4B4FAC1AD2AFD8009A4393 /* TM@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4FAA1AD2AFD8009A4393 /* TM@2x.png */; };
+		CE4B4FAE1AD2B521009A4393 /* TM.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4B4FAD1AD2B521009A4393 /* TM.png */; };
 		CE4E44891ACA62FF003D4C92 /* NFAST.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4E44881ACA62FF003D4C92 /* NFAST.png */; };
+		CE561F071AD2CC6600B6F26A /* RM.png in Resources */ = {isa = PBXBuildFile; fileRef = CE561F051AD2CC6600B6F26A /* RM.png */; };
+		CE561F081AD2CC6600B6F26A /* RM@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE561F061AD2CC6600B6F26A /* RM@2x.png */; };
+		CE561F0B1AD2CD1500B6F26A /* Statistics.png in Resources */ = {isa = PBXBuildFile; fileRef = CE561F091AD2CD1500B6F26A /* Statistics.png */; };
+		CE561F0C1AD2CD1500B6F26A /* Statistics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE561F0A1AD2CD1500B6F26A /* Statistics@2x.png */; };
+		CE561F0F1AD2CD3200B6F26A /* Administrator.png in Resources */ = {isa = PBXBuildFile; fileRef = CE561F0D1AD2CD3200B6F26A /* Administrator.png */; };
+		CE561F101AD2CD3200B6F26A /* Administrator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE561F0E1AD2CD3200B6F26A /* Administrator@2x.png */; };
+		CEA1E0471AD39217005F681C /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E0431AD39217005F681C /* cancel.png */; };
+		CEA1E0481AD39217005F681C /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E0441AD39217005F681C /* clear.png */; };
+		CEA1E0491AD39217005F681C /* commit.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E0451AD39217005F681C /* commit.png */; };
+		CEA1E04A1AD39217005F681C /* loadactive.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E0461AD39217005F681C /* loadactive.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,14 +102,8 @@
 		CE089F2F1AC9016F00C6E5DE /* TopologyManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopologyManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE089F341AC9016F00C6E5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE089F351AC9016F00C6E5DE /* TopologyManagementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyManagementTests.swift; sourceTree = "<group>"; };
-		CE089F681AC9048800C6E5DE /* Admin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Admin.png; sourceTree = "<group>"; };
-		CE089F691AC9048800C6E5DE /* Admin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Admin@2x.png"; sourceTree = "<group>"; };
 		CE089F6A1AC9048800C6E5DE /* configeditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = configeditor.png; sourceTree = "<group>"; };
 		CE089F6B1AC9048800C6E5DE /* configeditor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "configeditor@2x.png"; sourceTree = "<group>"; };
-		CE089F6C1AC9048800C6E5DE /* RM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RM.png; sourceTree = "<group>"; };
-		CE089F6D1AC9048800C6E5DE /* RM@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RM@2x.png"; sourceTree = "<group>"; };
-		CE089F6E1AC9048800C6E5DE /* Statistics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Statistics.png; sourceTree = "<group>"; };
-		CE089F6F1AC9048800C6E5DE /* Statistics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Statistics@2x.png"; sourceTree = "<group>"; };
 		CE089F701AC9048800C6E5DE /* topology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topology.png; sourceTree = "<group>"; };
 		CE089F711AC9048800C6E5DE /* topology@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topology@2x.png"; sourceTree = "<group>"; };
 		CE089F831AC9619B00C6E5DE /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
@@ -119,11 +135,39 @@
 		CE40044D1ACB8EF100B689EF /* savediagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = savediagram.png; sourceTree = "<group>"; };
 		CE40044E1ACB8EF100B689EF /* saveinfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveinfo.png; sourceTree = "<group>"; };
 		CE40044F1ACB8EF100B689EF /* showgrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = showgrid.png; sourceTree = "<group>"; };
-		CE4004501ACB8EF100B689EF /* timepicker_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timepicker_disable.png; sourceTree = "<group>"; };
 		CE4004511ACB8EF100B689EF /* timepicker_enable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timepicker_enable.png; sourceTree = "<group>"; };
 		CE4004521ACB8EF100B689EF /* tools.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tools.png; sourceTree = "<group>"; };
 		CE4004531ACB8EF100B689EF /* viewoption.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewoption.png; sourceTree = "<group>"; };
+		CE4B4F521AD0DC94009A4393 /* MainMenuHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuHeaderCell.swift; sourceTree = "<group>"; };
+		CE4B4F541AD0F1B4009A4393 /* autodiscover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = autodiscover.png; sourceTree = "<group>"; };
+		CE4B4F561AD0F21F009A4393 /* logs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logs.png; sourceTree = "<group>"; };
+		CE4B4F581AD0F2C7009A4393 /* showactivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = showactivity.png; sourceTree = "<group>"; };
+		CE4B4F5A1AD0F31B009A4393 /* software.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = software.png; sourceTree = "<group>"; };
+		CE4B4F5C1AD0F61B009A4393 /* customview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customview.png; sourceTree = "<group>"; };
+		CE4B4F5E1AD0F652009A4393 /* timepicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timepicker.png; sourceTree = "<group>"; };
+		CE4B4F621AD10A55009A4393 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CE4B4F641AD11883009A4393 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		CE4B4F671AD12BA1009A4393 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE4B4F6A1AD1E2F0009A4393 /* Connectivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Connectivity.png; sourceTree = "<group>"; };
+		CE4B4F6B1AD1E2F0009A4393 /* Device.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Device.png; sourceTree = "<group>"; };
+		CE4B4F6C1AD1E2F0009A4393 /* Server.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Server.png; sourceTree = "<group>"; };
+		CE4B4F6D1AD1E2F0009A4393 /* Testtool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Testtool.png; sourceTree = "<group>"; };
+		CE4B4F6E1AD1E2F0009A4393 /* topologylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topologylist.png; sourceTree = "<group>"; };
+		CE4B4F741AD223D5009A4393 /* TableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
+		CE4B4FA71AD26E86009A4393 /* SidebarCanvasDomainPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarCanvasDomainPicker.swift; sourceTree = "<group>"; };
+		CE4B4FAA1AD2AFD8009A4393 /* TM@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TM@2x.png"; sourceTree = "<group>"; };
+		CE4B4FAD1AD2B521009A4393 /* TM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TM.png; sourceTree = "<group>"; };
 		CE4E44881ACA62FF003D4C92 /* NFAST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NFAST.png; sourceTree = "<group>"; };
+		CE561F051AD2CC6600B6F26A /* RM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RM.png; sourceTree = "<group>"; };
+		CE561F061AD2CC6600B6F26A /* RM@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RM@2x.png"; sourceTree = "<group>"; };
+		CE561F091AD2CD1500B6F26A /* Statistics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Statistics.png; sourceTree = "<group>"; };
+		CE561F0A1AD2CD1500B6F26A /* Statistics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Statistics@2x.png"; sourceTree = "<group>"; };
+		CE561F0D1AD2CD3200B6F26A /* Administrator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Administrator.png; sourceTree = "<group>"; };
+		CE561F0E1AD2CD3200B6F26A /* Administrator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Administrator@2x.png"; sourceTree = "<group>"; };
+		CEA1E0431AD39217005F681C /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		CEA1E0441AD39217005F681C /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		CEA1E0451AD39217005F681C /* commit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commit.png; sourceTree = "<group>"; };
+		CEA1E0461AD39217005F681C /* loadactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadactive.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +228,7 @@
 				CE089F1C1AC9016F00C6E5DE /* AppDelegate.swift */,
 				CE089F871AC961C400C6E5DE /* Controllers */,
 				CE089F231AC9016F00C6E5DE /* Main.storyboard */,
+				CE4B4F621AD10A55009A4393 /* UIColor.swift */,
 				CE089F261AC9016F00C6E5DE /* Images.xcassets */,
 				CE089F281AC9016F00C6E5DE /* LaunchScreen.xib */,
 				CE089F1E1AC9016F00C6E5DE /* TopologyManagement.xcdatamodeld */,
@@ -220,16 +265,18 @@
 		CE089F3F1AC9020C00C6E5DE /* navigation tab */ = {
 			isa = PBXGroup;
 			children = (
-				CE089F681AC9048800C6E5DE /* Admin.png */,
-				CE089F691AC9048800C6E5DE /* Admin@2x.png */,
 				CE089F6A1AC9048800C6E5DE /* configeditor.png */,
+				CE561F051AD2CC6600B6F26A /* RM.png */,
+				CE561F061AD2CC6600B6F26A /* RM@2x.png */,
 				CE089F6B1AC9048800C6E5DE /* configeditor@2x.png */,
 				CE089F921AC9853000C6E5DE /* menu.png */,
-				CE089F6C1AC9048800C6E5DE /* RM.png */,
+				CE561F0D1AD2CD3200B6F26A /* Administrator.png */,
+				CE561F0E1AD2CD3200B6F26A /* Administrator@2x.png */,
+				CE561F091AD2CD1500B6F26A /* Statistics.png */,
+				CE561F0A1AD2CD1500B6F26A /* Statistics@2x.png */,
 				CE089F8E1AC9841D00C6E5DE /* narraLogo.png */,
-				CE089F6D1AC9048800C6E5DE /* RM@2x.png */,
-				CE089F6E1AC9048800C6E5DE /* Statistics.png */,
-				CE089F6F1AC9048800C6E5DE /* Statistics@2x.png */,
+				CE4B4FAD1AD2B521009A4393 /* TM.png */,
+				CE4B4FAA1AD2AFD8009A4393 /* TM@2x.png */,
 				CE089F701AC9048800C6E5DE /* topology.png */,
 				CE089F711AC9048800C6E5DE /* topology@2x.png */,
 			);
@@ -241,6 +288,7 @@
 			children = (
 				CE089F831AC9619B00C6E5DE /* ENSideMenu.swift */,
 				CE089F841AC9619B00C6E5DE /* ENSideMenuNavigationController.swift */,
+				CE4B4F741AD223D5009A4393 /* TableViewHelper.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -248,6 +296,7 @@
 		CE089F871AC961C400C6E5DE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE4B4F661AD12B7D009A4393 /* Admin Controllers */,
 				99BFD2121ACA5C6700EF66D1 /* Auto-D Controllers */,
 				6ED36B321ACA5B0E000C9B1C /* RM Controllers */,
 				CE4E44861ACA5F81003D4C92 /* TM Controllers */,
@@ -271,7 +320,9 @@
 		CE4004411ACB8DD200B689EF /* main menu */ = {
 			isa = PBXGroup;
 			children = (
+				CE4B4F541AD0F1B4009A4393 /* autodiscover.png */,
 				CE4004421ACB8EF100B689EF /* config.png */,
+				CE4B4F5C1AD0F61B009A4393 /* customview.png */,
 				CE4004431ACB8EF100B689EF /* debug.png */,
 				CE4004441ACB8EF100B689EF /* delete.png */,
 				CE4004451ACB8EF100B689EF /* edit.png */,
@@ -279,18 +330,42 @@
 				CE4004471ACB8EF100B689EF /* filter.png */,
 				CE4004481ACB8EF100B689EF /* hidegrid.png */,
 				CE4004491ACB8EF100B689EF /* load.png */,
+				CE4B4F561AD0F21F009A4393 /* logs.png */,
 				CE40044A1ACB8EF100B689EF /* power.png */,
+				CE4B4F641AD11883009A4393 /* grid.png */,
 				CE40044B1ACB8EF100B689EF /* save.png */,
 				CE40044C1ACB8EF100B689EF /* saveas.png */,
 				CE40044D1ACB8EF100B689EF /* savediagram.png */,
 				CE40044E1ACB8EF100B689EF /* saveinfo.png */,
+				CE4B4F581AD0F2C7009A4393 /* showactivity.png */,
 				CE40044F1ACB8EF100B689EF /* showgrid.png */,
-				CE4004501ACB8EF100B689EF /* timepicker_disable.png */,
+				CE4B4F5A1AD0F31B009A4393 /* software.png */,
 				CE4004511ACB8EF100B689EF /* timepicker_enable.png */,
+				CE4B4F5E1AD0F652009A4393 /* timepicker.png */,
 				CE4004521ACB8EF100B689EF /* tools.png */,
 				CE4004531ACB8EF100B689EF /* viewoption.png */,
 			);
 			name = "main menu";
+			sourceTree = "<group>";
+		};
+		CE4B4F661AD12B7D009A4393 /* Admin Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B4F671AD12BA1009A4393 /* LoginViewController.swift */,
+			);
+			name = "Admin Controllers";
+			sourceTree = "<group>";
+		};
+		CE4B4F691AD1E28B009A4393 /* sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B4F6A1AD1E2F0009A4393 /* Connectivity.png */,
+				CE4B4F6B1AD1E2F0009A4393 /* Device.png */,
+				CE4B4F6C1AD1E2F0009A4393 /* Server.png */,
+				CE4B4F6D1AD1E2F0009A4393 /* Testtool.png */,
+				CE4B4F6E1AD1E2F0009A4393 /* topologylist.png */,
+			);
+			name = sidebar;
 			sourceTree = "<group>";
 		};
 		CE4E44861ACA5F81003D4C92 /* TM Controllers */ = {
@@ -298,7 +373,9 @@
 			children = (
 				CE089F881AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift */,
 				CE089F8A1AC963A500C6E5DE /* CanvasSideBarTableController.swift */,
+				CE4B4FA71AD26E86009A4393 /* SidebarCanvasDomainPicker.swift */,
 				CE089F8C1AC965B800C6E5DE /* CanvasViewController.swift */,
+				CE4B4F521AD0DC94009A4393 /* MainMenuHeaderCell.swift */,
 				CE089F981AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift */,
 				CE089F9A1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift */,
 			);
@@ -308,12 +385,25 @@
 		CE4E44871ACA62EB003D4C92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CE4004411ACB8DD200B689EF /* main menu */,
 				CE4E44881ACA62FF003D4C92 /* NFAST.png */,
+				CEA1E03A1AD385C0005F681C /* action buttons */,
+				CE4B4F691AD1E28B009A4393 /* sidebar */,
+				CE4004411ACB8DD200B689EF /* main menu */,
 				CE4004341ACADB8E00B689EF /* navigation panel */,
 				CE089F3F1AC9020C00C6E5DE /* navigation tab */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		CEA1E03A1AD385C0005F681C /* action buttons */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1E0431AD39217005F681C /* cancel.png */,
+				CEA1E0441AD39217005F681C /* clear.png */,
+				CEA1E0451AD39217005F681C /* commit.png */,
+				CEA1E0461AD39217005F681C /* loadactive.png */,
+			);
+			name = "action buttons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,46 +487,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE561F071AD2CC6600B6F26A /* RM.png in Resources */,
 				CE089F7B1AC9048800C6E5DE /* topology@2x.png in Resources */,
+				CE4B4F721AD1E2F0009A4393 /* Testtool.png in Resources */,
 				CE40043E1ACADCB700B689EF /* configname.png in Resources */,
 				CE40045F1ACB8EF100B689EF /* savediagram.png in Resources */,
-				CE089F761AC9048800C6E5DE /* RM.png in Resources */,
+				CE4B4F5D1AD0F61B009A4393 /* customview.png in Resources */,
 				CE4004571ACB8EF100B689EF /* edit.png in Resources */,
 				CE40045A1ACB8EF100B689EF /* hidegrid.png in Resources */,
 				CE4004611ACB8EF100B689EF /* showgrid.png in Resources */,
 				CE4004601ACB8EF100B689EF /* saveinfo.png in Resources */,
 				CE4004561ACB8EF100B689EF /* delete.png in Resources */,
 				CE089F751AC9048800C6E5DE /* configeditor@2x.png in Resources */,
+				CE561F101AD2CD3200B6F26A /* Administrator@2x.png in Resources */,
+				CE4B4F651AD11883009A4393 /* grid.png in Resources */,
 				CE089F251AC9016F00C6E5DE /* Main.storyboard in Resources */,
+				CE4B4FAE1AD2B521009A4393 /* TM.png in Resources */,
+				CE4B4F731AD1E2F0009A4393 /* topologylist.png in Resources */,
+				CE4B4F701AD1E2F0009A4393 /* Device.png in Resources */,
+				CE561F0F1AD2CD3200B6F26A /* Administrator.png in Resources */,
 				CE40043A1ACADC5A00B689EF /* canvasmapping.png in Resources */,
 				CE4004381ACADC2500B689EF /* topology_sanitytest.png in Resources */,
-				CE4004621ACB8EF100B689EF /* timepicker_disable.png in Resources */,
+				CE4B4F5B1AD0F31B009A4393 /* software.png in Resources */,
+				CE4B4F6F1AD1E2F0009A4393 /* Connectivity.png in Resources */,
 				CE40045D1ACB8EF100B689EF /* save.png in Resources */,
-				CE089F721AC9048800C6E5DE /* Admin.png in Resources */,
 				CE40045B1ACB8EF100B689EF /* load.png in Resources */,
 				CE4004361ACADBFB00B689EF /* topology-console.png in Resources */,
 				CE40043C1ACADC7900B689EF /* zoomdefault.png in Resources */,
 				CE089F8F1AC9841D00C6E5DE /* narraLogo.png in Resources */,
+				CE561F081AD2CC6600B6F26A /* RM@2x.png in Resources */,
+				CE4B4F571AD0F21F009A4393 /* logs.png in Resources */,
 				CE4004401ACADCCE00B689EF /* historyIcon.png in Resources */,
 				CE4004581ACB8EF100B689EF /* editgrid.png in Resources */,
-				CE089F781AC9048800C6E5DE /* Statistics.png in Resources */,
+				CEA1E0481AD39217005F681C /* clear.png in Resources */,
 				CE4004641ACB8EF100B689EF /* tools.png in Resources */,
+				CEA1E0471AD39217005F681C /* cancel.png in Resources */,
+				CE4B4F551AD0F1B4009A4393 /* autodiscover.png in Resources */,
 				CE4004631ACB8EF100B689EF /* timepicker_enable.png in Resources */,
+				CE4B4F711AD1E2F0009A4393 /* Server.png in Resources */,
 				CE089F741AC9048800C6E5DE /* configeditor.png in Resources */,
+				CE561F0B1AD2CD1500B6F26A /* Statistics.png in Resources */,
 				CE4E44891ACA62FF003D4C92 /* NFAST.png in Resources */,
 				CE089F2A1AC9016F00C6E5DE /* LaunchScreen.xib in Resources */,
 				CE40045E1ACB8EF100B689EF /* saveas.png in Resources */,
 				CE4004651ACB8EF100B689EF /* viewoption.png in Resources */,
 				CE4004541ACB8EF100B689EF /* config.png in Resources */,
 				CE089F271AC9016F00C6E5DE /* Images.xcassets in Resources */,
+				CEA1E04A1AD39217005F681C /* loadactive.png in Resources */,
+				CE4B4FAC1AD2AFD8009A4393 /* TM@2x.png in Resources */,
 				CE089F7A1AC9048800C6E5DE /* topology.png in Resources */,
 				CE4004551ACB8EF100B689EF /* debug.png in Resources */,
+				CE4B4F5F1AD0F652009A4393 /* timepicker.png in Resources */,
+				CE4B4F591AD0F2C7009A4393 /* showactivity.png in Resources */,
 				CE4004591ACB8EF100B689EF /* filter.png in Resources */,
 				CE089F931AC9853000C6E5DE /* menu.png in Resources */,
-				CE089F731AC9048800C6E5DE /* Admin@2x.png in Resources */,
-				CE089F771AC9048800C6E5DE /* RM@2x.png in Resources */,
+				CE561F0C1AD2CD1500B6F26A /* Statistics@2x.png in Resources */,
+				CEA1E0491AD39217005F681C /* commit.png in Resources */,
 				CE40045C1ACB8EF100B689EF /* power.png in Resources */,
-				CE089F791AC9048800C6E5DE /* Statistics@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,14 +561,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4B4F681AD12BA1009A4393 /* LoginViewController.swift in Sources */,
+				CE4B4F531AD0DC94009A4393 /* MainMenuHeaderCell.swift in Sources */,
 				CE089F991AC9AF5200C6E5DE /* CanvasNavigationPanelController.swift in Sources */,
+				CE4B4F751AD223D5009A4393 /* TableViewHelper.swift in Sources */,
 				CE089F851AC9619B00C6E5DE /* ENSideMenu.swift in Sources */,
 				CE089F9B1ACA2F5A00C6E5DE /* CanvasMainMenuController.swift in Sources */,
 				CE089F1D1AC9016F00C6E5DE /* AppDelegate.swift in Sources */,
 				CE089F891AC9632A00C6E5DE /* CanvasSideBarNavigationController.swift in Sources */,
 				CE089F861AC9619B00C6E5DE /* ENSideMenuNavigationController.swift in Sources */,
+				CE4B4F631AD10A55009A4393 /* UIColor.swift in Sources */,
 				CE089F201AC9016F00C6E5DE /* TopologyManagement.xcdatamodeld in Sources */,
 				CE089F8D1AC965B800C6E5DE /* CanvasViewController.swift in Sources */,
+				CE4B4FA81AD26E86009A4393 /* SidebarCanvasDomainPicker.swift in Sources */,
 				CE089F8B1AC963A500C6E5DE /* CanvasSideBarTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,41 +8,46 @@
 import UIKit
 
 class CanvasNavigationPanelController: UITableViewController{
-    @IBOutlet var navigationPanelTableView: UITableView!
-    var items: [String] = ["We", "Heart", "Swift"]
+    let navigationImages = ["topology-console","topology_sanitytest","canvasmapping","zoomdefault","configname","historyIcon"]
+    let navigationTitle = ["Remote Console","Sanity Test","Canvas Navigator","Zoom","Config Name","History"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
-        tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.clearColor()
-        tableView.scrollsToTop = false
-        
-        // Preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
-        
-        self.navigationPanelTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    func navigationPanelTableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count;
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return navigationImages.count
     }
     
-    func navigationPanelTableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        var cell = tableView.dequeueReusableCellWithIdentifier("navigationMenuCell") as UITableViewCell
+        
+        cell.textLabel!.text = navigationTitle[indexPath.row]
+        
+        var imageName = UIImage(named: navigationImages[indexPath.row])
+        cell.imageView!.image = imageName
         
         return cell
     }
     
-    func navigationPanelTableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        println("You selected cell #\(indexPath.row)!")
+    override func tableView(tableView: (UITableView!), didSelectRowAtIndexPath indexPath: (NSIndexPath!)) {
+        let alert = UIAlertController(title: "Item selected", message: "You selected item \(indexPath.row)", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "OK",
+            style: UIAlertActionStyle.Default,
+            handler: {
+                (alert: UIAlertAction!) in println("An alert of type \(alert.style.hashValue) was tapped!")
+                self.tableView?.deselectRowAtIndexPath(indexPath, animated: true)
+        }))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
     }
+
 }

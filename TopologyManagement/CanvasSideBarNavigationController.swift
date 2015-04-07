@@ -16,7 +16,7 @@ class CanvasSideBarNavigationController: ENSideMenuNavigationController, ENSideM
         sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: CanvasSideBarTableViewController(), menuPosition:.Left)
         //sideMenu?.delegate = self //optional
         sideMenu?.menuWidth = 180.0 // optional, default is 160
-        //sideMenu?.bouncingEnabled = false
+        sideMenu?.bouncingEnabled = false
         
         // make navigation bar showing over side menu
         view.bringSubviewToFront(navigationBar)
