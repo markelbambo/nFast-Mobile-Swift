@@ -27,7 +27,7 @@ class CanvasNavigationPanelController: UITableViewController{
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("navigationMenuCell") as UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("navigationMenuCell") as! UITableViewCell
         
         cell.textLabel!.text = navigationTitle[indexPath.row]
         

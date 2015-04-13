@@ -25,7 +25,7 @@ class CanvasSideBarTableViewController: UITableViewController{
         // Preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
         
-        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: false, scrollPosition: .Middle)
+        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: true, scrollPosition: .Middle)
     }
     
     override func didReceiveMemoryWarning() {
@@ -113,23 +113,24 @@ class CanvasSideBarTableViewController: UITableViewController{
         selectedMenuItem = indexPath.row
         
         //Present new view controller
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        var destViewController : UIViewController
-        switch (indexPath.row) {
-        case 0:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker") as UIViewController
-            break
-        case 1:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker")as UIViewController
-            break
-        case 2:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker")as UIViewController
-            break
-        default:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker") as UIViewController
-            break
-        }
-        sideMenuController()?.setContentViewController(destViewController)
+//        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+//        var destViewController : UIViewController
+//        switch (indexPath.row) {
+//        case 0:
+//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker") as UIViewController
+//            break
+//        case 1:
+//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker")as UIViewController
+//            break
+//        case 2:
+//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker")as UIViewController
+//            break
+//        default:
+//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SidebarDomainPicker") as UIViewController
+//            break
+//        }
+//        sideMenuController()?.setContentViewController(destViewController)
+        CanvasViewController().createDevice()
     }
     
     

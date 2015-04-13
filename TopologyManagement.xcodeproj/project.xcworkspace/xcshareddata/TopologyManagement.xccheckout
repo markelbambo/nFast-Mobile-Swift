@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2EA41252-86B1-420A-A84E-00DE6BD18B16</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TopologyManagement</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>468165C87A6E759B3B9EE33E945BF27A22162DC8</key>
 		<string>https://github.com/markelbambo/nFast-Mobile-Swift.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TopologyManagement.xcodeproj</string>
+	<string>TopologyManagement.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>468165C87A6E759B3B9EE33E945BF27A22162DC8</key>

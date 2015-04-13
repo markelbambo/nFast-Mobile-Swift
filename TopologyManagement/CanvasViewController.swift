@@ -7,22 +7,18 @@
 //
 import UIKit
 
-class CanvasViewController: UIViewController, ENSideMenuDelegate {
+class CanvasViewController: UIViewController, ENSideMenuDelegate, UICollisionBehaviorDelegate {
     @IBOutlet var canvasMainView: UIView!
+    @IBOutlet var canvasActionButtonsOutlet: UISegmentedControl!
+    var canvasView = UIView()
     
-    @IBAction func canvasMainMenuBtn(sender: UIBarButtonItem) {
-        hideSideMenuView()
-        self.performSegueWithIdentifier("CanvasMainMenuTableView", sender: self)
+    
+    var animator: UIDynamicAnimator!
+    var collision: UICollisionBehavior!
+    var square: UIView!
+    var snap: UISnapBehavior!
 
-    }
-    @IBAction func canvasNavigatorPanelBtn(sender: UIBarButtonItem) {
-        hideSideMenuView()
-        self.performSegueWithIdentifier("CanvasNavigationPanelTableView", sender: self)
-    }
-    func domainBtnTrigger() {
-        println("hey")
-        self.performSegueWithIdentifier("SidebarDomainPicker", sender: self)
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,30 +29,43 @@ class CanvasViewController: UIViewController, ENSideMenuDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
-        // 1
-        var nav = self.navigationController?.navigationBar
-        // 2
-        //nav?.barStyle = UIBarStyle.Black
-        //nav?.tintColor = UIColor.yellowColor()
-        // 3
-        let actionbuttons = ["commit","cancel","clear","loadactive"]
-        for var ctr = 0; ctr < 3; ++ctr {
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-            imageView.contentMode = .ScaleAspectFit
-            // 4
-            let image = UIImage(named: actionbuttons[ctr])
-            imageView.image = image
-            // 5
-            navigationItem.titleView = imageView
-        }
-        
-        //for login auto redirect if not yet login
-//        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
-//        if (isLoggedIn != 1) {
-//            self.performSegueWithIdentifier("goto_login", sender: self)
-//        }
+        createDevice()
+        createDevice2()
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func canvasMainMenuBtn(sender: UIBarButtonItem) {
+        hideSideMenuView()
+        self.performSegueWithIdentifier("CanvasMainMenuTableView", sender: self)
+    }
+    @IBAction func canvasNavigatorPanelBtn(sender: UIBarButtonItem) {
+        hideSideMenuView()
+        self.performSegueWithIdentifier("CanvasNavigationPanelTableView", sender: self)
+    }
+    func domainBtnTrigger() {
+        self.performSegueWithIdentifier("SidebarDomainPicker", sender: self)
+    }
+    @IBAction func canvasActionButtons(sender: UISegmentedControl) {
+        switch canvasActionButtonsOutlet.selectedSegmentIndex {
+        case 0:
+            println("commit")
+        case 1:
+            println("clear")
+        case 2:
+            println("cancel")
+        case 3:
+            println("load active")
+        default:
+            println("dasd")
+            break;
+        }
+        canvasActionButtonsOutlet.selectedSegmentIndex = -1
+    }
+
     
     
     func setUpLayer() {
@@ -64,7 +73,7 @@ class CanvasViewController: UIViewController, ENSideMenuDelegate {
         let screenWidth = screenSize.width - 30
         let screenHeight = screenSize.height - 150
         
-        var canvasView = UIView()
+        
         var l2: CALayer {
             return canvasView.layer
         }
@@ -91,15 +100,6 @@ class CanvasViewController: UIViewController, ENSideMenuDelegate {
         canvasView.addConstraint(constH)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    @IBAction func toggleSideMenu(sender: AnyObject) {
-        toggleSideMenuView()
-    }
     
     // MARK: - ENSideMenu Delegate
     func sideMenuWillOpen() {
@@ -113,5 +113,58 @@ class CanvasViewController: UIViewController, ENSideMenuDelegate {
     func sideMenuShouldOpenSideMenu() -> Bool {
         println("sideMenuShouldOpenSideMenu")
         return true
+    }
+    
+    
+    func createDevice2(){
+        square = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        square.backgroundColor = UIColor.grayColor()
+        canvasView.addSubview(square)
+     
+        animator = UIDynamicAnimator(referenceView: canvasView)
+        
+        collision = UICollisionBehavior(items: [square])
+        collision.collisionDelegate = self
+        collision.translatesReferenceBoundsIntoBoundary = true
+        animator.addBehavior(collision)
+        
+        let itemBehaviour = UIDynamicItemBehavior(items: [square])
+        //itemBehaviour.elasticity = 1
+        animator.addBehavior(itemBehaviour)
+    }
+    func collisionBehavior(behavior: UICollisionBehavior!, beganContactForItem item: UIDynamicItem!, withBoundaryIdentifier identifier: NSCopying!, atPoint p: CGPoint) {
+        println("Boundary contact occurred - \(identifier)")
+        
+        let collidingView = item as! UIView
+        collidingView.backgroundColor = UIColor.yellowColor()
+        UIView.animateWithDuration(0.3) {
+            collidingView.backgroundColor = UIColor.grayColor()
+        }
+    }
+    override func touchesEnded(touches:  Set<NSObject>, withEvent event: UIEvent) {
+        if (snap != nil) {
+            animator.removeBehavior(snap)
+        }
+        if let touch = touches.first as? UITouch {
+            snap = UISnapBehavior(item: square, snapToPoint: touch.locationInView(view))
+            animator.addBehavior(snap)
+        }
+        
+    }
+
+    
+    
+    
+    func createDevice(){
+        let halfSizeOfView = 25.0
+        let canvasWidth = (CGRectGetWidth(canvasView.bounds) - 30)
+        let canvasHeigth = (CGRectGetHeight(canvasView.bounds) - 30)
+        let insetSize = CGRectInset(canvasView.bounds, CGFloat(Int(2 * halfSizeOfView)), CGFloat(Int(2 * halfSizeOfView))).size
+        
+        var pointX = CGFloat(UInt(arc4random() % UInt32(UInt(insetSize.width))))
+        var pointY = CGFloat(UInt(arc4random() % UInt32(UInt(insetSize.height))))
+        
+        var newView = CanvasNodeCreator(frame: CGRectMake(pointX, pointY, 50, 50), canvasWidth: canvasWidth, canvasHeigth: canvasHeigth)
+        canvasView.addSubview(newView)
     }
 }

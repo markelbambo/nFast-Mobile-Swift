@@ -38,10 +38,9 @@ class CanvasMainMenuController: UITableViewController{
         }
     }
     
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("mainMenuCell", forIndexPath: indexPath) as UITableViewCell
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("mainMenuCell", forIndexPath: indexPath) as! UITableViewCell
         switch (indexPath.section) {
         case 0:
             cell.textLabel?.text = configSubMenus[indexPath.row]
@@ -62,7 +61,7 @@ class CanvasMainMenuController: UITableViewController{
     }
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         println("sectionssss==\(section)")
-        let  headerCell = tableView.dequeueReusableCellWithIdentifier("mainMenuHeaderCell") as MainMenuHeaderCell
+        let  headerCell = tableView.dequeueReusableCellWithIdentifier("mainMenuHeaderCell") as! MainMenuHeaderCell
         headerCell.backgroundColor = UIColor(netHex:0x39599C)
         switch (section) {
         case 0:
